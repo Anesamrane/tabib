@@ -1,0 +1,65 @@
+.Workwithuspage{
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10vh;
+    animation: cardslide 0.3s 0s;
+    animation-timeline: view();
+}
+@keyframes cardslide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+.Workwithuspage h1{
+    text-align: center;
+}
+.Workwithuspagecard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+.Workwithuspage .Workwithuspagecard .card{
+    width: 30%;
+    height: 40vh;
+}
+.Workwithuspage .Workwithuspagecard .card svg{
+    font-size: 10vh;
+    color: #278C7A;
+}
+
+.Workwithuspage button{
+    padding: 3vh 4vh 3vh 4vh;
+    border: #278C7A solid 0.3vh;
+    border-radius: 5vh;
+    color: #e6e6e6;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #278C7A;
+    margin-top: 3vh;
+    transition: 0.3s;
+}
+.Workwithuspage button:hover{
+    box-shadow: 0 0 1vh #278C7A;
+    transform: translateY(-8px);
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .Workwithuspagecard{
+        display: block;
+        margin-top: 10vh;
+    }
+    .Workwithuspage .Workwithuspagecard .card{
+        width: 90%;
+        min-height: 40vh;
+    }
+  }

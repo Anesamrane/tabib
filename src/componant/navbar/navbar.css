@@ -1,0 +1,114 @@
+.navbar{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+.navbar nav div a{
+    text-decoration: none;
+    color: #171717;
+    margin: 3vh;
+    position: relative;
+    right: 10%;
+    font-weight: bold;
+    padding: 2vh;
+    transition: 0.2s;
+}
+.navbar nav div button{
+    padding: 2vh 4vh 2vh 4vh;
+    border: #278C7A solid 0.3vh;
+    border-radius: 5vh;
+    cursor: pointer;
+    color: #278C7A;
+    background: none;
+    transition: 0.3s;
+}
+.navbar nav div a:hover{
+    color: #278C7A;
+}
+.navbar nav div button:hover{
+    background-color: #278C7A;
+    color: #e6e6e6;
+}
+.menu{
+    display: none;
+}
+.menu button{
+    padding: 2vh 4vh 2vh 4vh;
+    border: #278C7A solid 0.3vh;
+    border-radius: 5vh;
+    cursor: pointer;
+    color: #278C7A;
+    background: none;
+    transition: 0.3s;
+}
+.menu button:hover{
+    background-color: #278C7A;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: auto;
+    background-color: #e6e6e6;
+    box-shadow: 0 0 1vh #171717;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    display: none;
+    transition: 0.3s;
+}
+#header div{
+    width: 100%;
+    background-color: #e6e6e6;
+    margin-top: 1vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#header div a{
+    display: block;
+    width: 98%;
+    text-decoration: none;
+    color: #171717;
+    padding: 3vh 0 3vh 3vh;
+    transition: 0.3s;
+    font-weight: bold;
+}
+#header div button{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #171717;
+    padding: 3vh 0 3vh 3vh;
+    transition: 0.3s;
+    font-weight: bold;
+}
+#header div button{
+    text-align: left;
+    border: none;
+    background-color: #278C7A;
+    color: #fff;
+    cursor: pointer;
+}
+#header div a:hover{
+    color: #278C7A;
+}
+#header div button:hover{
+    background-color: #155b4e;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .navbar nav div{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }

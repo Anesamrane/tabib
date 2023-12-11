@@ -1,0 +1,40 @@
+.footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #dcdcdc;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+.footer a{
+    text-decoration: none;
+    color: #171717;
+    transition: 0.3s;
+    line-height: 4vh;
+}
+.footer ul li{
+    list-style: none;
+    margin-left: -32px;
+}
+.footer .specialties div{
+    display: flex;
+    justify-content: space-between;
+}
+.footer a:hover{
+    color: #278C7A;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .footer{
+        display: block;
+        padding: 3vh;
+    }
+    .footer div{
+        margin: 3vh;
+    }
+    .footer .specialties div{
+        display: block;
+    }
+  }

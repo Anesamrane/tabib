@@ -1,0 +1,6 @@
+@media screen and (max-width: 768px) {
+    /* Styles for small screens */
+    .navbar, .main, .why, .work, .footer {
+        margin: 0.5vh;
+    }   
+}
